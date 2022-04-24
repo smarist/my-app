@@ -10,6 +10,7 @@ import {
 } from "react-router-dom"
 import Home from "./components/Views/Home"
 import About from "./components/Views/About"
+import Product from "./components/Views/product"
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
           </Route>
           
           <Route path="/about" element={<About />}>
+          </Route>
+
+          <Route path="/product/:id" element={<Product />}>
           </Route>
         </Routes>
     </div>
